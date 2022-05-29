@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="plugins/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home - Visit Rwanda</title>
+</head>
+
+<body onload="load()">
+    <div class="header">
+        <div class="logo">
+            <img src="images/header-logo.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="tourism.html">Tourism</a>
+                        <ul class="submenu">
+                            <li><a href="tourism.html#destinations">Destinations</a></li>
+                            <li><a href="tourism.html#interests">Interests</a></li>
+                            <li><a href="files/TOURIST-PRODUCTS-BOOKING-GUIDELINES.pdf" target="_blank">Plan a trip</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="accomodation.html">Accomodation</a>
+                        <ul class="submenu">
+                            <li><a href="accomodation.html#hotels">Hotels</a></li>
+                            <li><a href="accomodation.html#resorts">Resorts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="meet_in_rwanda.html">Meet in Rwanda</a>
+                        <ul class="submenu">
+                            <li><a href="meet_in_rwanda.html#kcc">Kigali Convention Center</a></li>
+                            <li><a href="meet_in_rwanda.html#around-the-city">Around the city</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="files/TOURIST-PRODUCTS-BOOKING-GUIDELINES.pdf" target="_blank">My Trip</a></li>
+                    <li><a href="interests.html">Other Interests</a>
+                        <ul class="submenu">                            
+                            <li><a href="interests.html#education">Education</a></li>
+                            <li><a href="interests.html#sports">Sports & Adventure</a></li>
+                            <li><a href="interests.html#lake-kivu">Lake Kivu</a></li>
+                            <li><a href="interests.html#rwandair">RwandAir</a></li>
+                            <li><a href="interests.html#kwita-izina">Kwita Izina</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-content">
+        <div class="container">
+            <!-- Content left start -->
+            <div class="content-left">
+                <div class="gallery-container">
+                    <div class="slider-show-container">
+                        <div id="playPauseBtn" onclick="playPauseSlides()"></div>
+
+                        <div class="left-arrow" onclick="plusSlides(-1)"><span class="arrow arrow-left"></span></div>
+                        <div class="right-arrow" onclick="plusSlides(1)"><span class="arrow arrow-right"></span></div>
+
+                        <div class="captionHolder">
+                            <p class="captionText"></p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide1.jpg" alt="Lake_Kivu">
+                            <p class="captionText">Fishing boats, Lake Kivu</p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide2.jpg" alt="Canopy_Walk">
+                            <p class="captionText">Canopy Walk, Nyungwe National Park</p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide3.jpg" alt="Mtn_Gorillas">
+                            <p class="captionText">Mountain Gorillas, Volcanoes National Park</p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide4.jpg" alt="Hippos">
+                            <p class="captionText">Hippopotamus, Akagera National Park</p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide5.jpg" alt="Royal Tourism">
+                            <p class="captionText">Rwanda Royal Tourism</p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide6.jpg" alt="Innovation_City">
+                            <p class="captionText">Carnegie Mellon University</p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide7.jpg" alt="VW-Rwanda">
+                            <p class="captionText">Volkswagen, Car assembly plant in Rwanda in partnership with German
+                            </p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide8.jpg" alt="Zipline">
+                            <p class="captionText">Zipline Tech Incubation</p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide9.jpg" alt="Kigali">
+                            <p class="captionText">Kigali, The Capital City of Rwanda</p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide10.jpg" alt="Convention_Center">
+                            <p class="captionText">Kigali Convention Center</p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide11.jpg" alt="Kigali">
+                            <p class="captionText">Around The City</p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/slide12.jpg" alt="Kigali">
+                            <p class="captionText">Gacuriro Vision City</p>
+                        </div>
+
+                    </div>
+                    <div id="dotsContainer"></div>
+                </div>
+
+                <div id="tourism">
+
+                    <div class="highlights">
+                        <h2><span><a href="tourism.html" class="highlights-a">Tourism</a></span></h2>
+                        <div class="description-text">
+                            <p>Rwanda is known as the land of a thousand hills due to her picturesque, sleepy and dramatic scenery. Warm and friendly people
+                                offer unique experiences for Rwanda to be one of the most remarkable countries in the world. Rwanda is blessed
+                                with extraordinary biodiversity, with incredible wildlife living,
+                                montane rainforest and sweeping plains.</p>
+                            <p>Tourists come from far and wide to catch a glimpse of the magnificent gorillas, yet there
+                                is so much more to see and experience.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="highlights-img">
+                    <img class="image-resize" src="images/Tourism.jpg" alt="Tourism">
+                </div>
+
+
+                <div class="high-section">
+                    <div class="high-members">
+                        <a href="#member1"><img src="images/highlight1.jpg" alt="member"></a>
+                        <a href="#member2"><img src="images/highlight2.jpg" alt="member"></a>
+                        <a href="#member3"><img src="images/highlight3.jpg" alt="member"></a>
+                    </div>
+
+                    <div class="section" id="member1">
+                        <span class="high-heading">Higlights</span>
+                        <span class="name">The Great Rift Valley</span>
+                        <p>The west of Rwanda forms a branch of the Great Rift Valley known as the Albertine Rift. It
+                            has many unique, endemic species and is bursting with life.</p>
+                        <p>Chimpanzees, golden monkeys and other primates live alongside hundreds of brightly-coloured
+                            birds, orchids and butterflies.</p>
+                        <p>And that is only scratching the surface…</p>
+
+                        <div class="btn-wrapper">
+                            <a href="tourism.html#national-parks" class="btn">View National Parks</a>
+                        </div>
+
+                    </div>
+
+                    <div class="section" id="member2">
+                        <span class="high-heading">Higlights</span>
+                        <span class="name">Responsible Tourism</span>
+                        <p>As guardians of many iconic species, Rwanda is committed to safeguarding their existence
+                            within the four National Parks.</p>
+                        <p>We are constantly working to ensure we can live in sustainable harmony with our environment,
+                            with a clean and green mindset. We banned plastic bags in 2008, and our lands are possibly
+                            the cleanest in Africa thanks to efforts throughout every community.</p>
+                        <p>Ten percent of the income derived from gorilla, safari and other tourist permits, as well as
+                            park fees, is spent in partnership with local communities to change lives for the better.
+                        </p>
+
+                        <!-- <div class="btn-wrapper">
+                            <a href="#" class="btn">View Activities</a>
+                        </div> -->
+
+                    </div>
+
+                    <div class="section" id="member3">
+                        <span class="high-heading">Higlights</span>
+                        <span class="name">Vibrant Culture</span>
+                        <p>Warm and friendly, Rwandans are also respectful, thoughtful and committed to the idea of
+                            progress, starting at the grass roots and running all the way to the top.</p>
+                        <p>From the ancient kingdom to the modern day, creativity is something to be celebrated, whether
+                            through traditional dance, unique architecture or works of art.</p>
+
+                        <div class="btn-wrapper">
+                            <a href="#tourism#interests" class="btn">View Culture & Heritage</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="investment">
+
+                    <div class="highlights">
+                        <h2><span><a href="void:javascript">Transformation</a></span></h2>
+                        <div class="description-text">
+                            <p>Rwanda is ranked as the second easiest place to do business in Africa by the World Bank and
+                                has been awarded for its leadership in tourism and economic competitiveness by the World
+                                Travel and Tourism Council (WTTC) and the World Economic Forum respectively.</p>
+                            <p>Rwanda is helping to drive the fourth industrial revolution across Africa.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="highlights-img">
+                    <img src="images/Transformation.jpg" alt="image">
+                </div>
+
+                <div class="high-section">
+                    <div class="high-members">
+                        <a href="#invest1"><img src="images/invest1.jpg" alt="member"></a>
+                        <a href="#invest2"><img src="images/invest2.jpg" alt="invest"></a>
+                        <a href="#invest3"><img src="images/invest3.jpg" alt="invest"></a>
+                    </div>
+
+                    <div class="section" id="invest1">
+                        <span class="high-heading">Incentives</span>
+                        <span class="name">Special Economic Zones</span>
+                        <p>Discover why we are the second fastest growing economy in Africa, and prepare to enjoy the
+                            opportunities accrued from the free trade agreements that we’ve signed with over 50
+                            countries.</p>
+                        <p>Designated serviced land is provided for small and large scale industrial development, as
+                            well as reliable, quality infrastructure, competitive fiscal and non-fiscal regulations and
+                            streamlined administration procedures.</p>
+                    </div>
+
+                    <div class="section" id="invest2">
+                        <span class="high-heading">Tech Incubation</span>
+                        <span class="name">Zipline</span>
+                        <p>Rwanda is an ideal tech incubator, thanks to its compact size and appetite for innovation.
+                        </p>
+                        <p>We welcome pioneering initiatives such as that by Silicon Valley company Zipline, which now
+                            delivers critical blood products to rural medical clinics across our mountainous lands.</p>
+                    </div>
+
+                    <div class="section" id="invest3">
+                        <span class="high-heading">Center of Excellence</span>
+                        <span class="name">Innovation City</span>
+                        <p>Discover an area in Kigali for world-class universities and think tanks to mingle with technology companies, helping drive private sector growth.</p>
+                        <p>Innovation City is an ecosystem linking high tech industry, research and education with capital investment, which aims to create jobs and reduce our current account deficit.</p>
+                    </div>
+
+                </div>
+
+                <div id="meet-in-rwanda">
+
+                    <div class="highlights">
+                        <h2><span><a href="meet_in_rwanda.html" class="highlights-a">Meet in Rwanda</a></span></h2>
+                        <div class="description-text">
+                            <p>Rwanda is an excellent hub for meetings and events, with world-class facilities – the Kigali
+                                Convention Centre has been chosen to host the next Commonwealth Heads of Government Summit
+                                in 2020.</p>
+                            <p>Conveniently located close to Kigali airport, the KCC offers a premium environment for
+                                regional and international conventions, exhibitions, festivals, meetings and other events.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="highlights-img">
+                        <img src="images/KCC-Radisson.jpg" alt="image">
+                    </div>
+
+                </div>
+            
+
+            </div>
+            <!-- End of left Content -->
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+
+                <div class="ads-board">
+
+                    <div class="ads-big">
+                        <img src="images/ads/rwandair.gif" alt="Rwandair">
+                    </div>
+
+                    <div class="ads-small">
+                        <img src="images/ads/weekender.gif" alt="Weekender">
+                    </div>
+
+                    <div class="ads-big">
+                        <img src="images/ads/skol.gif" alt="Skool">
+                    </div>
+
+                    <div class="ads-big">
+                        <img src="images/ads/skol-banner.jpg" alt="Skool">
+                    </div>
+
+                    <div class="ads-big">
+                        <img src="images/ads/san-coffee.gif" alt="San-Coffee">
+                    </div>
+
+                    <div class="ads-big">
+                        <img src="images/ads/I_&_M.gif" alt="I_&_M">
+                    </div>
+
+                    <div class="ads-big">
+                        <img src="images/ads/bpr2.gif" alt="MTN">
+                    </div>
+
+                </div>
+
+               <div class="news-board">
+                    <h3>Trending</h3>
+                    <div class="news-roller">
+                        <p>
+                            <a href="https://bit.ly/2YYAgY2" target="blank"><img src="images/news/smartphones.jpg" alt="Powered by block chain">
+                                <span>Smartphone powered by blockchain technology showcased in Kigali</span>
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="https://bit.ly/2JmO3Cv" target="blank"><img src="images/news/android-malware.jpg" alt="Malware-Attack">
+                                <span>New Android Malware for Banking Apps steal passwords by recording screens</span>
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="https://bit.ly/2FVjHEZ" target="blank"><img src="images/news/samsung.gif" alt="Samsung">
+                                <span>The Samsung Galaxy Note 10 Launch Date and Specs</span>
+                            </a>
+                        </p>
+                        
+                        <p>
+                            <a href="https://bit.ly/2NFSYTl" target="blank"><img src="images/news/butterfly-keyboard.gif" alt="Butterfly-Keyboard">
+                                <span>Apple to Ditch the Controversial ‘Butterfly Keyboard’ in Future</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="news-board">
+                    <h3>Recently Updated</h3>
+                    <div class="news-roller">
+                        <p>
+                            <a href="https://bit.ly/2FJMFr8" target="blank">
+                                <img src="images/news/airline.jpg" alt="Airline">
+                                <span>Seamless ID Verification Technology for the Airline Industry</span>
+                            </a>
+                        </p>
+                         <p>
+                            <a href="https://bit.ly/2OgvvZh" target="blank">
+                                <img src="images/news/gsma.jpg" alt="GSMA">
+                                <span>GSMA meet: Experts discuss fake news, the future of media</span>
+                            </a>
+                        </p>
+                         <p>
+                            <a href="https://bit.ly/2YUqgPL" target="blank">
+                                <img src="images/news/gaming.jpg" alt="Gaming CPU">
+                                <span>AMD’s 16-core 7nm Gaming CPU Ryzen 9 3950X has a Record Clock Speed vs</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="news-board">
+                    <h3>You May Like</h3>
+                    <div class="news-roller">
+                        <p>
+                            <a href="https://bit.ly/2JzDiww" target="blank">
+                                <img src="images/news/facebook-ftc.jpg" alt="Facebook">
+                                <span>Facebook FTC fight ends with a $5 billion fine</span>
+                            </a>
+                        </p>
+                         <p>
+                            <a href="https://bit.ly/2LrSBcS" target="blank">
+                                <img src="images/news/president's-daughter-weds.jpg" alt="Wedding">
+                                <span>Rwanda President's Only Daughter Weds</span>
+                            </a>
+                        </p>
+                         <p>
+                            <a href="https://bit.ly/2Y8FO5a" target="blank">
+                                <img src="images/news/yvan.jpg" alt="Yvan">
+                                <span>Yvan Buravan set to perform in DR Congo</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Sidebar -->
+
+            <div class="footer-wrapper">
+
+                <div class="subscribe">
+                    <form action="#" method="POST">
+                        <input type="email" class="email" placeholder="Your Email" autocomplete="off" required>
+                        <input type="submit" class="submit" value="Subscribe Now">
+                    </form>
+                </div>
+                <div  class="footer-text">
+                    <p>Follow Visit Rwanda:</p>
+                </div> 
+
+                <div class="footer-social-icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/" target="blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-copyright">
+                    <div>
+                        &copy; 2019 Ahadi H Josue | All Rights Reserved
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <a class="gotop-btn" href="#"><i class="fa fa-chevron-circle-up"></i></a> -->
+    <button id="back-to-top-btn"><i class="fa fa-angle-double-up"></i></button>
+
+    <div id="loader-wrapper">
+        <span class="loader">
+            <span class="loader-inner"></span>
+        </span>
+    </div>
+
+    <script src="js/home_slider.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/back_to_top.js"></script>
+
+</body>
+
+</html>
